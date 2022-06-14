@@ -5,7 +5,7 @@ pipeline {
         stage('Deploy') {
             steps {
                 echo 'deploy app with image on K8s'
-                sh 'kubectl apply -f deploy.yml --kubeconfig /admin.conf' 
+                sh 'kubectl apply -f deploy.yml --kubeconfig /root/admin.conf' 
             }
         }
     }
